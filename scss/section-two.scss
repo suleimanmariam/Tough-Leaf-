@@ -1,0 +1,187 @@
+.section-two {
+  background-color: #f0f0f0;
+  padding: 6.979vw 4.45vw 5.208vw 6.2vw ; 
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .label {
+        font-size: 1.25vw;
+        font-weight: 600;
+        color: var(--primary-blue-2);
+      }
+    }
+    .right-section {
+      display: flex;
+      align-items: center;
+      gap: 0.521vw;
+      cursor: pointer;
+      position: relative;
+      img {
+        width: 2.292vw;
+        &.swiper-button-prev {
+          left: -5.521vw;
+        }
+        &.swiper-button-next {
+          left: -2.5vw;
+        }
+      }
+      span {
+        font-size: 1.25vw;
+        font-weight: 600;
+        padding-left: 16px;
+        color: var(--primary-grey-7);
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    gap: 2.083vw;
+    max-width: 1920px;
+    margin-top: 100px;
+    margin-top: 4.688vw;
+    .card-container {
+      padding: 1.458vw;
+      background-color: var(--primary-white-1);
+      min-width: 27.76vw;
+      .title {
+        text-align: center;
+        color: var(--primary-black-3);
+        font-size: 1.25vw;
+      }
+      .dash {
+        margin: auto;
+        margin-top: 0.677vw;
+      }
+      .subtitle {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        align-items: center;
+        margin-top: 0.677vw;
+        font-size: 1.146vw;
+        color: var(--primary-black-3);
+        span {
+          font-size: 1.146vw;
+        }
+        img {
+          height: 0.83vw;
+          width: 0.83vw;
+        }
+      }
+      .card-item-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 10px;
+        gap: 0.521vw;
+        padding: 1.042vw 0;
+        padding-bottom: 2.604vw;
+        .card-item {
+          width: 11.823vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: var(--primary-white-4);
+          padding: 0.848vw 3px;
+          border-radius: 0.4vw;
+          min-height: 9.323vw;
+          .card-item-title {
+            color: var(--primary-black-3);
+            text-align: center;
+            font-size: 0.629vw;
+            max-width: 10.833vw;
+          }
+          .card-item-subtitle {
+            margin-top: 0.4vw;
+            font-size: 0.417vw;
+            color: var(--primary-grey-7);
+            font-size: 0.67vw;
+          }
+          .card-item-image {
+            width: 3.021vw;
+            height: 3.021vw;
+            margin-top: 1.042vw;
+            img {
+              width: 100%;
+              height: 100%;
+              display: flex;
+            }
+          }
+          .card-item-button {
+            display: none;
+            background-color: var(--primary-white-1);
+            color: var(--primary-blue-1);
+            border: 0;
+            padding: 0.736vw 2.604vw;
+            border-radius: 36px;
+            margin-top: 1.042vw;
+            font-size: 0.815vw;
+            cursor: pointer;
+          }
+          &:hover {
+            background-color: var(--primary-blue-1);
+            .card-item-title {
+              color: var(--primary-white-1);
+            }
+            .card-item-subtitle {
+              color: var(--primary-white-1);
+            }
+            .card-item-image {
+              display: none;
+            }
+            .card-item-button {
+              display: block;
+            }
+          }
+        }
+        &.two-card-item {
+          .card-item {
+            width: 100%;
+          }
+        }
+      }
+      .card-button {
+        display: flex;
+        justify-content: center;
+        button {
+          min-height: 3.646vw;
+          padding: 0 3.125vw;
+          border-radius: 36px;
+          color: var(--primary-blue-1);
+          border: 1px solid var(--primary-blue-1);
+          background: var(--primary-white-1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1.198vw;
+          cursor: pointer;
+          &:hover {
+            background-color: var(--primary-blue-1);
+            color: var(--primary-white-1);
+          }
+        }
+        span {
+          font-size: 0.86vw;
+        }
+      }
+    }
+    .swiper-pagination {
+      bottom: 0.3vw;
+      .swiper-pagination-bullet {
+        height: 0.573vw;
+        width: 0.573vw !important;
+        &.swiper-pagination-bullet-active {
+          background-color: var(--primary-blue-1);
+        }
+      }
+      span {
+        margin:  0 0.8vw 0 0 !important;
+      }
+    }
+  }
+}

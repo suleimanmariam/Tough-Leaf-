@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <title>Tough Leaf</title>
+</head>
+
+<body>
+  <!-- Section one  -->
+  <div class="section-one">
+    <div class="image-holder">
+      <img src="../img/section-one/group.png" />
+      <div class="image-holder-container">
+        <div class="details">
+          <div class="header">
+            <!-- <div class="logo"> -->
+            <img class="logo" src="../img/section-one/header-logo.svg" />
+            <!-- </div> -->
+            <div class="menu">
+              <div class="item selected-item">HOME</div>
+              <div class="item">SERVICES</div>
+              <div class="item">PROJECTS</div>
+              <div class="item">ABOUT</div>
+              <div class="item with-border">CONTACT</div>
+              <div class="book-demo">BOOK DEMO</div>
+              <div onclick="displayLoggedInPage()" class="login">LOG IN</div>
+            </div>
+          </div>
+
+          <div id="default-state">
+            <div class="title ellipse-word">WHERE DIVERSITY</div>
+            <div class="sub-title ellipse-word">THRIVES</div>
+            <div class="description">
+              Onboard Quality Xbes To Your Projects
+              <br />
+              <br />
+              Minority Business Enterprise (MBE)
+              <br />
+              Women Business Enterprise (WBE)
+              <br />
+              Disadvantaged Business Enterprise (DBE)
+              <br />
+              Service Disabled Veteran Business Enterprise (SDVOB)
+              <br />
+              Local Business Enterprise (LBE)
+            </div>
+            <div class="button">
+              <div class="text">BOOK A DEMO</div>
+            </div>
+          </div>
+
+          <div id="xbe-db">
+            <div class="hover-details">
+              <div class="title">FIND & HIRE QUALITY</div>
+              <div class="sub-title">XBEs</div>
+              <div class="description">
+                Onboard Quality Xbes To Your Projects
+                <br />
+                <br />
+                Xbes Refers To: Minority Business Enterprise (MBE)
+                <br />
+                Women Business Enterprise (WBE)
+                <br />
+                Service Disabled Veteran Business Enterprise (SDVOB)
+                <br />
+                Local Business Enterprise (LBE)
+              </div>
+              <div class="button">
+                <div class="text">ACCESS OUR DATABASE</div>
+              </div>
+            </div>
+            <img src="../img/section-one/xbe-db.svg" />
+          </div>
+
+          <div id="available-projects">
+            <div class="hover-details">
+              <div class="title">DISCOVER AND BID</div>
+              <div class="sub-title">ON PROJECTS</div>
+              <div class="description">
+                Onboard Quality Xbes To Your Projects
+              </div>
+              <div class="button">
+                <div class="text">DISCOVER OUR PROJECTS</div>
+              </div>
+            </div>
+            <img src="../img/section-one/available-projects.svg" />
+          </div>
+
+          <div id="post-project">
+            <div class="hover-details">
+              <div class="title">POST YOUR OWN</div>
+              <div class="sub-title">PROJECT</div>
+              <div class="description">
+                The traditional process is your architect and/or designer
+                creates the plans for your home and then sends them to 2-3
+                contractors for a price
+              </div>
+              <div class="button">
+                <div class="text">POST YOUR PTOJECT</div>
+              </div>
+            </div>
+            <img src="../img/section-one/post-project.svg" />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="control" id="xdb-control">
+            <div class="ellipse-word">XBE DATABASE</div>
+          </div>
+          <div class="control" id="propjects-control">
+            <div class="ellipse-word">AVAILABLE PROJECTS</div>
+          </div>
+          <div class="control" id="post-control">
+            <div class="ellipse-word">POST PROJECT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section two  -->
+  <div class="section-two">
+    <div class="card-title">
+      <div class="left-section">
+        <div class="dash"></div>
+        <div class="label">AVAILABLE PROJECTS</div>
+      </div>
+      <div class="right-section">
+        <img class="swiper-button-prev" src="/img/section-two/prev.svg" />
+        <img class="swiper-button-next" src="/img/section-two/next.svg" />
+        <span class="view-all">VIEW ALL</span>
+      </div>
+    </div>
+    <div class="swiper swiperOne">
+      <div class="swiper-wrapper">
+        <div class="cards swiper-slide">
+          <div class="card-container">
+            <div class="title ellipse-word">FOUR BRIDGE REHAB PROJECT NAME...</div>
+            <div class="dash"></div>
+            <div class="subtitle">
+              <img src="../img/forms/eye.svg" />
+              <span>Westchester</span>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="card-item-container swiper-slide">
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image3.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image5.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image11.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                </div>
+                <div class="card-item-container swiper-slide">
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="card-button">
+              <button>
+                <span>VIEW PROJECT</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="title ellipse-word">FOUR BRIDGE REHAB PROJECT NAME...</div>
+            <div class="dash"></div>
+            <div class="subtitle">
+              <img src="../img/forms/eye.svg" />
+              <span>Westchester</span>
+            </div>
+            <div class="card-item-container">
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image10.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image9.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image7.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image3.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+            </div>
+            <div class="card-button">
+              <button>
+                <span>VIEW PROJECT</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="title ellipse-word">FOUR BRIDGE REHAB PROJECT NAME...</div>
+            <div class="dash"></div>
+            <div class="subtitle">
+              <img src="../img/forms/eye.svg" />
+              <span>Westchester</span>
+            </div>
+            <div class="card-item-container two-card-item">
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image3.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image1.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+            </div>
+            <div class="card-button">
+              <button>
+                <span>VIEW PROJECT</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards swiper-slide">
+          <div class="card-container">
+            <div class="title ellipse-word">FOUR BRIDGE REHAB PROJECT NAME...</div>
+            <div class="dash"></div>
+            <div class="subtitle">
+              <img src="../img/forms/eye.svg" />
+              <span>Westchester</span>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="card-item-container swiper-slide">
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                </div>
+                <div class="card-item-container swiper-slide">
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                  <div class="card-item">
+                    <div class="card-item-title">
+                      Warning Lights on Temporary Positive Barriers
+                    </div>
+                    <div class="card-item-subtitle">July 29, 2022</div>
+                    <div class="card-item-image">
+                      <img src="../img/section-two/image1.svg" />
+                    </div>
+                    <button class="card-item-button">BID NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="card-button">
+              <button>
+                <span>VIEW PROJECT</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="title ellipse-word">FOUR BRIDGE REHAB PROJECT NAME...</div>
+            <div class="dash"></div>
+            <div class="subtitle">
+              <img src="../img/forms/eye.svg" />
+              <span>Westchester</span>
+            </div>
+            <div class="card-item-container">
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image1.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image1.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image1.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image1.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+            </div>
+            <div class="card-button">
+              <button>
+                <span>VIEW PROJECT</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="title ellipse-word">FOUR BRIDGE REHAB PROJECT NAME...</div>
+            <div class="dash"></div>
+            <div class="subtitle">
+              <img src="../img/forms/eye.svg" />
+              <span>Westchester</span>
+            </div>
+            <div class="card-item-container two-card-item">
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image1.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+              <div class="card-item">
+                <div class="card-item-title">
+                  Warning Lights on Temporary Positive Barriers
+                </div>
+                <div class="card-item-subtitle">July 29, 2022</div>
+                <div class="card-item-image">
+                  <img src="../img/section-two/image1.svg" />
+                </div>
+                <button class="card-item-button">BID NOW</button>
+              </div>
+            </div>
+            <div class="card-button">
+              <button>
+                <span>VIEW PROJECT</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section three  -->
+  <div class="section-three">
+    <div class="legacy-white-bg-holder">
+      <img src="../img/section-three/legacy-white-background.svg" />
+      <div class="legacy-details">
+        <div class="date">
+          <div class="dash"></div>
+          <span>EST, 2012</span>
+        </div>
+        <div class="title ellipse-two-lines ">OUR LEGACY IS BUILDING YOUR FUTURE</div>
+        <div class="description">
+          We embrace ventures of all shapes and sizes - each and every one of
+          which is treated with the same center values that characterize our
+          company - genuineness, judgment, proficient advice and quality
+          craftmanship.
+        </div>
+        <div class="about-us">ABOUT US</div>
+      </div>
+    </div>
+    <div class="image-wrapper">
+      <div class="img-holder">
+        <img src="../img/section-three/legacy.png" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Section four  -->
+  <div class="section-four">
+    <div class="top-section">
+      <div class="state-holder">
+        <div id="default-state-img-holder">
+          <!-- <img id="bg-img" src="../img/section-four/mask-group-upper.png" /> -->
+          <div class="states-wrapper">
+            <div id="hiring">
+              <div class="title">HIRING ENTITIES</div>
+              <div class="details">
+                <div class="details-header">HIRING ENTITIES</div>
+                <div class="details-description">
+                  Find & Bid Projects Easily
+                  <br />
+                  Advertise Strengths & Capabilities
+                  <br />
+                  Invite Contractors to be References
+                  <br />
+                  Develop Quality Relationships w/ Contractors
+                  var>
+                </div>
+                <div class="action">LEARN MORE</div>
+              </div>
+            </div>
+            <div id="xbe">
+              <div class="title">XBE</div>
+              <div class="details">
+                <div class="details-header">XBE</div>
+                <div class="details-description">
+                  Find & Bid Projects Easily
+                  <br />
+                  Advertise Strengths & Capabilities
+                  <br />
+                  Invite Contractors to be References Develop
+                  <br />
+                  Quality Relationships w/ Contractors
+                </div>
+                <div class="action">LEARN MORE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="down-section">
+      <div class="image-holder">
+        <!-- <img src="../img/section-four/leaf-mask.svg" /> -->
+        <div class="details">
+          <div class="title">
+            YOU HANDLE THE BUILDING.
+            <br />
+            We'll Handle Your Contractor Licensing Services.
+          </div>
+          <div class="statistics">
+            <div class="section">
+              <div class="nb">260 +</div>
+              <div class="data">Customers</div>
+            </div>
+            <div class="section">
+              <div class="nb">210 +</div>
+              <div class="data">XBEs</div>
+            </div>
+            <div class="section">
+              <div class="nb">140 +</div>
+              <div class="data">Projects</div>
+            </div>
+            <div class="section">
+              <div class="nb">$14M +</div>
+              <div class="data">Closed transactions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section five  -->
+
+  <div class="section-five">
+    <div class="top-items">
+      <div class="title">VIDEO TITLE GOES HERE</div>
+      <div class="seperator"></div>
+    </div>
+    <div class="bottom-items">
+      <iframe width="420" height="315" src="https://player.vimeo.com/video/690791512/" frameborder="0"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Section six  -->
+  <div class="section-six swiper infoSwiper">
+    <div class="info swiper-wrapper">
+      <div class="info-container swiper-slide">
+        <div class="left-section">
+          <img src="../img/section-six/restani.png" />
+        </div>
+        <div class="right-section">
+          <div class="top-item">
+            <img src="../img/section-six/semicolon.svg" />
+          </div>
+          <div class="middle-item">
+            <div class="title">
+              Thanks to Tough Leaf, we are able to gain real-time visibility
+              into our customer projects and follow up on incoming ones as
+              well.
+            </div>
+            <div class="subtitle">John Smith, CEO @ Restani Construction</div>
+          </div>
+          <div class="bottom-item"></div>
+        </div>
+      </div>
+      <div class="info-container swiper-slide">
+        <div class="left-section">
+          <img src="../img/section-six/restani.png" />
+        </div>
+        <div class="right-section">
+          <div class="top-item">
+            <img src="../img/section-six/semicolon.svg" />
+          </div>
+          <div class="middle-item">
+            <div class="title">
+              Thanks to Tough Leaf, we are able to gain real-time visibility
+              into our customer projects and follow up on incoming ones as
+              well.
+            </div>
+            <div class="subtitle">John Smith, CEO @ Restani Construction</div>
+          </div>
+          <div class="bottom-item"></div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination-info"></div>
+  </div>
+
+  <!-- Section Seven -->
+  <div class="section-seven">
+    <div class="info-container">
+      <div class="info-header">
+        <div class="title">FAQ</div>
+        <div class="description-container">
+          <div class="description">
+            Here are some of the toughLeaf frequently asked questions
+          </div>
+          <span class="view-all">VIEW ALL</span>
+        </div>
+        <div class="dash"></div>
+      </div>
+      <div class="info-questions">
+        <div class="question">
+          <div class="title">
+            <div class="text">How to bid for new project?</div>
+            <span id="question1ToggleBtn" data-bs-toggle="collapse" href="#question1" role="button"
+              aria-expanded="false" aria-controls="question1" onclick="toggleCollapse('question1ToggleBtn')">
+              +
+            </span>
+          </div>
+
+          <div class="collapse" id="question1">
+            <div class="card card-body">
+              You can find capable, verified & reviewed D/M/WBE, Review,
+              Award, & Onboard find capable, verified & reviewed D/M/WBE,
+              Review, Award, & Onboard
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="title">
+            <div class="text">How to achieve participation goals?</div>
+            <span data-bs-toggle="collapse" id="question2ToggleBtn" onclick="toggleCollapse('question2ToggleBtn')"
+              href="#question2" role="button" aria-expanded="false" aria-controls="question2">
+              +
+            </span>
+          </div>
+
+          <div class="collapse" id="question2">
+            <div class="card card-body">
+              You can find capable, verified & reviewed D/M/WBE, Review,
+              Award, & Onboard find capable, verified & reviewed D/M/WBE,
+              Review, Award, & Onboard
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="title">
+            <div class="text">How to achieve participation goals?</div>
+            <span id="question3ToggleBtn" onclick="toggleCollapse('question3ToggleBtn')" data-bs-toggle="collapse"
+              href="#question3" role="button" aria-expanded="false" aria-controls="question3">
+              +
+            </span>
+          </div>
+
+          <div class="collapse" id="question3">
+            <div class="card card-body">
+              You can find capable, verified & reviewed D/M/WBE, Review,
+              Award, & Onboard find capable, verified & reviewed D/M/WBE,
+              Review, Award, & Onboard
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="title">
+            <div class="text">How to achieve participation goals?</div>
+            <span id="question4ToggleBtn" onclick="toggleCollapse('question4ToggleBtn')" data-bs-toggle="collapse"
+              href="#question4" role="button" aria-expanded="false" aria-controls="question4">
+              +
+            </span>
+          </div>
+
+          <div class="collapse" id="question4">
+            <div class="card card-body">
+              You can find capable, verified & reviewed D/M/WBE, Review,
+              Award, & Onboard find capable, verified & reviewed D/M/WBE,
+              Review, Award, & Onboard
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="title">
+            <div class="text">How to achieve participation goals?</div>
+            <span id="question5ToggleBtn" onclick="toggleCollapse('question5ToggleBtn')" data-bs-toggle="collapse"
+              href="#question5" role="button" aria-expanded="false" aria-controls="question5">
+              +
+            </span>
+          </div>
+
+          <div class="collapse" id="question5">
+            <div class="card card-body">
+              You can find capable, verified & reviewed D/M/WBE, Review,
+              Award, & Onboard find capable, verified & reviewed D/M/WBE,
+              Review, Award, & Onboard
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section eight -->
+  <div class="section-eight">
+    <div class="footer">
+      <div class="footer-container">
+        <div class="left-setion">
+          <div class="top-item">
+            <img src="../img/section-nine/toughleaf.svg" />
+          </div>
+          <div class="middle-item">
+            <img src="../img/section-nine/linkedin.svg" />
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="items-container">
+            <div class="item">Home</div>
+            <div class="item">Projects</div>
+            <div class="item">Services</div>
+          </div>
+          <div class="items-container">
+            <div class="item">About</div>
+            <div class="item">Contact</div>
+            <div class="item">FAQ</div>
+          </div>
+          <div class="items-container">
+            <div class="item">Terms</div>
+            <div class="item">Privacy</div>
+            <div class="item">Disclaimer</div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="left-item">© 2022 ToughLeaf</div>
+        <div class="right-item">
+          <span>Cookie policy</span>
+          <span>Cookie Settings</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- login Page -->
+
+  <div id="signIn" class="auth">
+    <div class="auth-container">
+      <div class="sign-in">
+        <!-- Left section  -->
+        <div class="left-section">
+          <div class="left-section-container">
+            <div class="logo">
+              <img src="/img/forms/leaf.svg" />
+            </div>
+            <div class="description">
+              Fill out the form on the right. to sign in to your account
+            </div>
+          </div>
+        </div>
+
+        <!-- Right section  -->
+        <div class="right-section">
+          <!-- sign-in header  -->
+          <div class="auth-header">
+            <div class="right-item">SIGN IN</div>
+            <div onclick="hideLoggedInPage()" class="left-item">
+              <img src="/img/forms/close-icon.svg" />
+            </div>
+          </div>
+
+          <!-- sign-in Body  -->
+          <div class="sign-in-body">
+            <div class="input-container">
+              <div class="input-item">
+                <label class="label">Email Address</label>
+                <input type="text" placeholder="Enter your email" />
+              </div>
+              <div class="input-item">
+                <label class="label">Password</label>
+                <input type="password" placeholder="Enter your password" />
+              </div>
+            </div>
+
+            <div class="input-helper">
+              <div class="input-checkbox">
+                <input type="checkbox" />
+                <label> Remember me</label>
+              </div>
+              <div class="label">Forgot password?</div>
+            </div>
+
+            <div class="sign-in-button">
+              <button>SIGN IN</button>
+            </div>
+            <div class="sign-in-hint">
+              <div class="label">Not a member yet?</div>
+              <div onclick="displayRegisterPage()" class="link">SIGN UP</div>
+            </div>
+          </div>
+          <div class="sign-in-footer">
+            <div class="label">
+              By signing in, you agree to the User
+              <span class="link">User Agreement</span> Agreement and
+              <span class="link">Privacy Policy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register  -->
+  <div id="signUp" class="auth">
+    <div class="auth-container">
+      <div class="sign-up">
+        <div class="left-section">
+          <div class="stepper">
+            <div id="stepper-one" class="stepper-item active">1</div>
+            <div id="stepper-two" class="stepper-item">2</div>
+            <div id="stepper-three" class="stepper-item">3</div>
+            <div class="stepper-item">
+              <img src="/img/forms/eye.svg" />
+            </div>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="logo">
+            <img src="../img/forms/leaf.svg" />
+          </div>
+
+          <div class="text">
+            <div class="title">Account Registration</div>
+            <div class="desc">
+              Fill out the form on the right. to create your account, you can
+              always edit the data in the action menu.
+            </div>
+          </div>
+          <div class="hint">
+            <span>Already have an account?</span>
+            <span onclick="displayLoggedInPage()" class="link">SIGN IN</span>
+          </div>
+        </div>
+
+        <!-- TAB ONE  -->
+        <div id="tab-one" class="right-section">
+          <div class="auth-header">
+            <div class="right-item">CONTACT INFORMATION</div>
+            <div onclick="hideRegisterPage()" class="left-item">
+              <img src="/img/forms/close-icon.svg" />
+            </div>
+          </div>
+
+          <div class="sign-up-body">
+            <div class="input-container signup-page">
+              <div class="input-item">
+                <label class="label">First Name *</label>
+                <input id="first-name" oninput="getInputValue('first-name')" type="text"
+                  placeholder="Enter your first name" />
+                <div id="first-name-error" class="error">
+                  First name is required
+                </div>
+              </div>
+              <div class="input-item">
+                <label class="label">Last Name *</label>
+                <input id="last-name" oninput="getInputValue('last-name')" type="text"
+                  placeholder="Enter your last name" />
+                <div id="last-name-error" class="error">
+                  last name is required
+                </div>
+              </div>
+              <div class="input-item">
+                <label class="label">Email Address *</label>
+                <input id="email-address" oninput="getInputValue('email-address')" type="text"
+                  placeholder="Enter your email" />
+                <div id="email-address-error" class="error">
+                  Email address is required
+                </div>
+              </div>
+              <div class="input-item">
+                <label class="label">Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" />
+              </div>
+              <div class="input-item">
+                <label class="label">Password</label>
+                <input id="password" oninput="getInputValue('password')" type="password"
+                  placeholder="Enter your password" />
+                <div id="password-error" class="error">
+                  Password is required
+                </div>
+              </div>
+              <div class="input-item">
+                <label class="label">Password(re-type)*</label>
+                <input id="re-password" oninput="getInputValue('re-password')" type="password"
+                  placeholder="re type password" />
+                <div id="re-password-error" class="error">
+                  Password not match
+                </div>
+              </div>
+            </div>
+            <div class="sign-up-button end">
+              <button disabled id="button-tab-one"
+                onclick="displayNexTab('tab-one', 'tab-two', 'stepper-two','stepper-one')">
+                NEXT STEP
+                <span> > </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB TWO  -->
+        <div id="tab-two" class="right-section">
+          <div class="auth-header">
+            <div class="right-item">COMPANY INFORMATION</div>
+            <div onclick="hideRegisterPage()" class="left-item">
+              <img src="/img/forms/close-icon.svg" />
+            </div>
+          </div>
+          <div class="sign-up-body">
+            <div class="input-container signup-page">
+              <div class="input-item">
+                <label class="label">Company Type</label>
+                <input required id="company-type" oninput="getInputValue('company-type')" type="text"
+                  placeholder="Enter your company type" />
+                <div id="company-type-error" class="error">
+                  company type is required
+                </div>
+              </div>
+              <div class="input-item">
+                <label class="label">Company Name</label>
+                <input id="company-name" oninput="getInputValue('company-name')" type="text"
+                  placeholder="Enter your company name" />
+                <div id="company-name-error" class="error">
+                  company name is required
+                </div>
+              </div>
+              <div class="input-item">
+                <label class="label">Certification Type</label>
+                <input id="certification-type" oninput="getInputValue('certification-type')" type="text"
+                  placeholder="Enter your certification type" />
+                <div id="certification-type-error" class="error">
+                  certification type is required
+                </div>
+              </div>
+              <div class="input-item">
+                <label class="label">Business Type</label>
+                <input id="business-type" oninput="getInputValue('business-type')" type="text"
+                  placeholder="Enter your Business type" />
+                <div id="business-type-error" class="error">
+                  business type is required
+                </div>
+              </div>
+              <div class="input-item">
+                <label class="label">Website</label>
+                <input type="text" placeholder="Enter your website" />
+              </div>
+              <div class="input-item">
+                <label class="label">State</label>
+                <input id="state" oninput="getInputValue('state')" type="tetx" placeholder="enter your state" />
+                <div id="state-error" class="error">state is required</div>
+              </div>
+              <div class="input-item">
+                <label class="label">city</label>
+                <input id="city" oninput="getInputValue('city')" type="tetx" placeholder="enter your city" />
+                <div id="city-error" class="error">city is required</div>
+              </div>
+            </div>
+            <div class="sign-up-button">
+              <button class="prev" onclick="displayNexTab('tab-two', 'tab-one', 'stepper-one','stepper-two')">
+                <span>
+                  < </span>
+                    <span>Previews</span>
+              </button>
+              <button disabled id="button-tab-two"
+                onclick="displayNexTab('tab-two', 'tab-three', 'stepper-three','stepper-two')">
+                <span>NEXT STEP</span>
+                <span>></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB THREE  -->
+        <div id="tab-three" class="right-section">
+          <div class="auth-header">
+            <div class="right-item">SECURITY CONTROL</div>
+            <div onclick="hideRegisterPage()" class="left-item">
+              <img src="/img/forms/close-icon.svg" />
+            </div>
+          </div>
+          <div class="sign-up-body">
+            <div class="input-container signup-page">
+              <div class="sign-up-hint">Confirm that you are human*</div>
+            </div>
+            <div class="sign-up-button">
+              <button class="prev" onclick="displayNexTab('tab-three', 'tab-two', 'stepper-two','stepper-three')">
+                <span>
+                  < </span>
+                    <span>Previews</span>
+              </button>
+              <button id="button-tab-two">
+                <span>Create</span>
+                <span>></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+<script src="signup.js"></script>
+
+</html>

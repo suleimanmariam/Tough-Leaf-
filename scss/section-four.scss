@@ -1,0 +1,121 @@
+.section-four {
+    position: relative;
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        .state-holder {
+            position: relative;
+            #default-state-img-holder {
+                display: block;
+                height: 100%;
+                background: url("../img/section-four/mask-group-upper.png");
+                background-size: cover;
+            }
+            .states-wrapper {
+                min-height: 36.15vw;
+                width: 100%;
+                background-color: var(--primary-black-3);
+                opacity: 60%;
+                display: flex;
+                align-items: center;
+                #hiring,
+                #xbe {
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--primary-white-1);
+                    padding: 2vw 0px;
+                    .title {
+                        display: block;
+                        font-size: 2.5vw;
+                    }
+                    .details {
+                        display: none;
+                    }
+                    &:hover {
+                        .title {
+                            display: none;
+                        }
+                        .details {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+                .details-header {
+                    font-size: 1.75vw;
+                    text-transform: uppercase;
+                    margin-bottom: 3.5vw;
+                }
+                .details-description {
+                    font-size: 0.9vw;
+                    margin-bottom: 5vw;
+                    text-align: center;
+                    line-height: 2vw;
+                }
+                .action {
+                    color: var(--primary-blue-1);
+                    border: 0.01em solid var(--primary-blue-1);
+                    width: 9.75vw;
+                    font-size: 0.8vw;
+                    text-align: center;
+                    padding: 0.9vw 1.15vw;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+                .action:hover {
+                    color: var(--primary-white-1);
+                    background-color: var(--primary-blue-1);
+                    border: none;
+                }
+            }
+        }
+    }
+    .down-section {
+        position: relative;
+        .image-holder {
+            min-height: 42vw;
+            background: url(../img/section-four/leaf-mask.svg) var(--primary-blue-1);
+            background-size: cover;
+            .details {
+                padding: 9.9vw 18.4vw;
+                width: 100%;
+                .title {
+                    font-size: 2vw;
+                    color: var(--primary-white-2);
+                    margin-bottom: 8.5vw;
+                    text-align: center;
+                    font-weight: 600;
+                }
+                .statistics {
+                    gap: 7vw;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    .section {
+                        text-align: center;
+                        .nb {
+                            font-size: 2.25vw;
+                            color: var(--primary-white-3);
+                            font-weight: 600;
+                        }
+                        .data {
+                            font-size: 1.8vw;
+                            color: var(--primary-white-3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

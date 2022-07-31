@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.dash {
+    width: 2.5vw;
+    height: 0.1vw;
+    background-color: var(--primary-blue-1);
+}
+
+.blue-color {
+    color: var(--primary-blue-1) !important;
+    span {
+        color: var(--primary-black-1) !important;
+    }
+}
+.view-all {
+    font-size: 1.25vw;
+    font-weight: 600;
+    padding-left: 16px;
+    color: var(--primary-grey-2);
+    cursor: pointer;
+}
+.ellipse-word {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ellipse-two-lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
