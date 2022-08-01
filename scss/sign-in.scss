@@ -1,7 +1,7 @@
 .auth {
   min-height: 100vh;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 7%;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 100%;
@@ -11,7 +11,7 @@
   display: none;
   .auth-container {
     width: 80%;
-    max-width: 940px;
+    max-width: 48.958vw;
     background: var(--primary-white-1);
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 5px;
@@ -19,14 +19,14 @@
     .sign-in {
       display: flex;
       .left-section {
-        width: 300px;
-        padding: 0 30px;
+        width: 15.625vw;
+        padding: 0 1.563vw;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: var(--primary-blue-3);
         border-radius: 5px 0 0 5px;
-        flex-shrink: 0;
+
         .left-section-container {
           .logo {
             width: 3.125vw;
@@ -40,12 +40,13 @@
           .description {
             color: var(--primary-white-1);
             text-align: center;
-            margin-top: 20px;
+            margin-top: 1.042vw;
+            font-size: 0.833vw;
           }
         }
       }
       .right-section {
-        padding: 40px 3.636vw 40px 3.636vw;
+        padding: 2.083vw 3.636vw 2.083vw 3.636vw;
         width: 100%;
         .sign-in-body {
           margin-top: 2.188vw;
@@ -55,13 +56,19 @@
             align-items: center;
             margin-top: 1.563vw;
             flex-wrap: wrap;
+            font-size: 13px;
             .input-checkbox {
               display: flex;
               align-items: center;
+              input {
+                width: 1vw;
+                height: 1vw;
+              }
               label {
-                margin-left: 14px;
-                font-size: 16px;
+                margin-left: 0.729vw;
+                font-size: 0.833vw;
                 color: var(--primary-grey-12);
+                font-size: 0.833vw;
               }
             }
             .label {
@@ -73,18 +80,20 @@
             button {
               height: 3.125vw;
               width: 100%;
-              margin-top: 30px;
+              margin-top: 1.563vw;
               color: var(--primary-white-1);
               background: var(--primary-black-1);
               border: 0;
-              border-radius: 36px;
-              min-height: 50px;
+              border-radius: 1.875vw;
+              min-height: 2.604vw;
+              font-size: 0.833vw;
             }
           }
           .sign-in-hint {
             display: flex;
             justify-content: center;
             margin-top: 3.646vw;
+            font-size: 13px;
             .label {
               color: var(--primary-grey-12);
             }
@@ -97,7 +106,7 @@
         }
         .sign-in-footer {
           margin-top: 3.646vw;
-          font-size: 14px;
+          font-size: 0.729vw;
           text-align: center;
           color: var(--primary-grey-12);
           .link {
@@ -115,23 +124,25 @@
 
 // general css
 .input-container {
-  overflow: scroll;
+  padding-right: 10px;
   .input-item {
     display: flex;
     flex-direction: column;
-    min-height: 100px;
+    min-height: 5.208vw;
     label {
       color: var(--primary-grey-12);
-      font-size: 14px;
+      font-size: 0.729vw;
     }
     input {
       border: 1px solid #c2c4c5;
       height: 2.125vw;
       border-radius: 4px;
-      margin-top: 8px;
-      padding: 0 20px;
-      min-height: 50px;
+      margin-top: 0.417vw;
+      padding: 0 1.042vw;
+      min-height: 2.604vw;
+      font-size: 0.7vw;
       &::placeholder {
+        font-size: 11px;
         color: var(--primary-grey-11);
       }
     }
@@ -143,8 +154,9 @@
     }
   }
   &.signup-page {
-    max-height: 610px;
-    min-height: 610px;
+    max-height: 31.250vw;
+    min-height: 31.250vw;
+    overflow-y: auto;
   }
 }
 
@@ -159,34 +171,98 @@
     font-weight: 500;
   }
   .left-item {
-    height: 32px;
-    width: 32px;
+    height: 1.667vw;
+    width: 1.667vw;
+    display: flex;
     img {
+      height: 100%;
+      width: 100%;
       cursor: pointer;
     }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .auth {
     .auth-container {
+      width: 100%;
+      max-width: 100%;
+
       .sign-in {
         flex-direction: column;
         .left-section {
           width: 100%;
           border-radius: 5px 5px 0 0;
-          padding: 20px;
+          padding: 1.042vw;
           order: 2;
         }
         .right-section {
-          padding: 40px 30px 40px 30px;
+          padding: 20px;
         }
+        .sign-in-body {
+          .sign-in-button {
+            button {
+              border-radius: 4px !important;
+              min-height: 22px !important;
+              font-size: 11px !important;
+              margin-top: 16px !important;
+            }
+          }
+          .input-helper {
+            font-size: 11px !important;
+            margin-top: 16px !important;
+            .input-checkbox {
+              label {
+                font-size: 11px !important;
+              }
+              input {
+                width: 13px !important;
+                height: 13px !important;
+              }
+            }
+          }
+        }
+        .sign-in-footer {
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
+  .input-container {
+    &.signup-page {
+      max-height: 342px !important;
+      min-height:342px !important;
+    }
+    .input-item {
+      input {
+        padding: 0 16px;
+      }
+      label {
+        font-size: 11px !important;
       }
     }
   }
   .auth-header {
     .right-item {
-      font-size: 16px;
+      font-size: 13px !important;
+    }
+    .left-item {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  .left-section {
+    padding: 16px !important;
+    .left-section-container {
+      .logo {
+        display: flex;
+        height: 24px !important;
+        width: 24px !important;
+      }
+      .description {
+        font-size: 8px !important;
+        margin-top: 16px !important;
+      }
     }
   }
 }
@@ -194,30 +270,48 @@
 @media (max-width: 1100px) {
   .sign-in {
     .left-section {
-      flex-shrink: unset !important;
     }
     .right-section {
       .sign-in-body {
         .sign-in-hint {
-          font-size: 13px;
+          font-size: 11px !important;
         }
         .input-helper {
-          font-size: 13px;
+          font-size: 11px !important;
           .input-checkbox {
             label {
-              font-size: 13px !important;
+              font-size: 11px !important;
             }
           }
         }
       }
-      .sign-in-footer{
+      .sign-in-footer {
         font-size: 13px;
       }
     }
   }
   .auth-header {
     .right-item {
-      font-size: 14px;
+      font-size: 13px;
+    }
+  }
+  .input-container {
+    .label {
+      font-size: 11px !important;
+    }
+    .input-item {
+      margin-top: 8px;
+      input {
+        min-height: 30px;
+        font-size: 11px !important;
+        &::placeholder {
+          font-size: 11px !important;
+        }
+      }
+    }
+    &.signup-page {
+      max-height: 370px;
+      min-height:370px;
     }
   }
 }

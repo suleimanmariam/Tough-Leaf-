@@ -117,6 +117,9 @@ const displayRegisterPage = () => {
 }
 const hideRegisterPage = () => {
   document.getElementById('signUp').classList.remove("show")
+  document.getElementById('tab-two').style.display= 'none'
+  document.getElementById('tab-three').style.display= 'none'
+  document.getElementById('tab-one').style.display= 'block'
 }
 
 const toggleCollapse = (id) => {

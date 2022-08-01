@@ -13,6 +13,20 @@ let checkPassword = false
 let tabOneButton = document.getElementById("button-tab-one");
 let tabTwoButton = document.getElementById("button-tab-two");
 
+const resetPassword = ()=>{
+firstName = "";
+ lastName = "";
+ password = "";
+ rePassword = "";
+ emailAddress = "";
+ companyType = "";
+ companyName = "";
+ businessType = "";
+ certificationType ="";
+state = "";
+ city = "";
+ checkPassword = false
+}
 
 const addError = (target,id) => {
   if (!target) {

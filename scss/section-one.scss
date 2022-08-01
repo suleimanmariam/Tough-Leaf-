@@ -85,8 +85,7 @@
                     font-size: 0.95vw;
                     color: var(--primary-white-1);
                     max-height: 10vw;
-                    overflow-y: scroll;
-                    height: 10vw;
+                    min-height: 10vw;
                 }
                 .button {
                     margin: 3.35vw 0%;

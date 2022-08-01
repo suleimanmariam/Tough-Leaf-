@@ -66,7 +66,7 @@ body {
 .auth {
   min-height: 100vh;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 7%;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 100%;
@@ -76,7 +76,7 @@ body {
   display: none; }
   .auth .auth-container {
     width: 80%;
-    max-width: 940px;
+    max-width: 48.958vw;
     background: var(--primary-white-1);
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 5px;
@@ -84,14 +84,13 @@ body {
     .auth .auth-container .sign-in {
       display: flex; }
       .auth .auth-container .sign-in .left-section {
-        width: 300px;
-        padding: 0 30px;
+        width: 15.625vw;
+        padding: 0 1.563vw;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: var(--primary-blue-3);
-        border-radius: 5px 0 0 5px;
-        flex-shrink: 0; }
+        border-radius: 5px 0 0 5px; }
         .auth .auth-container .sign-in .left-section .left-section-container .logo {
           width: 3.125vw;
           height: 3.125vw;
@@ -102,9 +101,10 @@ body {
         .auth .auth-container .sign-in .left-section .left-section-container .description {
           color: var(--primary-white-1);
           text-align: center;
-          margin-top: 20px; }
+          margin-top: 1.042vw;
+          font-size: 0.833vw; }
       .auth .auth-container .sign-in .right-section {
-        padding: 40px 3.636vw 40px 3.636vw;
+        padding: 2.083vw 3.636vw 2.083vw 3.636vw;
         width: 100%; }
         .auth .auth-container .sign-in .right-section .sign-in-body {
           margin-top: 2.188vw; }
@@ -113,14 +113,19 @@ body {
             justify-content: space-between;
             align-items: center;
             margin-top: 1.563vw;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+            font-size: 13px; }
             .auth .auth-container .sign-in .right-section .sign-in-body .input-helper .input-checkbox {
               display: flex;
               align-items: center; }
+              .auth .auth-container .sign-in .right-section .sign-in-body .input-helper .input-checkbox input {
+                width: 1vw;
+                height: 1vw; }
               .auth .auth-container .sign-in .right-section .sign-in-body .input-helper .input-checkbox label {
-                margin-left: 14px;
-                font-size: 16px;
-                color: var(--primary-grey-12); }
+                margin-left: 0.729vw;
+                font-size: 0.833vw;
+                color: var(--primary-grey-12);
+                font-size: 0.833vw; }
             .auth .auth-container .sign-in .right-section .sign-in-body .input-helper .label {
               color: var(--primary-blue-1); }
           .auth .auth-container .sign-in .right-section .sign-in-body .sign-in-button {
@@ -128,16 +133,18 @@ body {
             .auth .auth-container .sign-in .right-section .sign-in-body .sign-in-button button {
               height: 3.125vw;
               width: 100%;
-              margin-top: 30px;
+              margin-top: 1.563vw;
               color: var(--primary-white-1);
               background: var(--primary-black-1);
               border: 0;
-              border-radius: 36px;
-              min-height: 50px; }
+              border-radius: 1.875vw;
+              min-height: 2.604vw;
+              font-size: 0.833vw; }
           .auth .auth-container .sign-in .right-section .sign-in-body .sign-in-hint {
             display: flex;
             justify-content: center;
-            margin-top: 3.646vw; }
+            margin-top: 3.646vw;
+            font-size: 13px; }
             .auth .auth-container .sign-in .right-section .sign-in-body .sign-in-hint .label {
               color: var(--primary-grey-12); }
             .auth .auth-container .sign-in .right-section .sign-in-body .sign-in-hint .link {
@@ -146,7 +153,7 @@ body {
               cursor: pointer; }
         .auth .auth-container .sign-in .right-section .sign-in-footer {
           margin-top: 3.646vw;
-          font-size: 14px;
+          font-size: 0.729vw;
           text-align: center;
           color: var(--primary-grey-12); }
           .auth .auth-container .sign-in .right-section .sign-in-footer .link {
@@ -156,22 +163,24 @@ body {
     display: block; }
 
 .input-container {
-  overflow: scroll; }
+  padding-right: 10px; }
   .input-container .input-item {
     display: flex;
     flex-direction: column;
-    min-height: 100px; }
+    min-height: 5.208vw; }
     .input-container .input-item label {
       color: var(--primary-grey-12);
-      font-size: 14px; }
+      font-size: 0.729vw; }
     .input-container .input-item input {
       border: 1px solid #c2c4c5;
       height: 2.125vw;
       border-radius: 4px;
-      margin-top: 8px;
-      padding: 0 20px;
-      min-height: 50px; }
+      margin-top: 0.417vw;
+      padding: 0 1.042vw;
+      min-height: 2.604vw;
+      font-size: 0.7vw; }
       .input-container .input-item input::placeholder {
+        font-size: 11px;
         color: var(--primary-grey-11); }
     .input-container .input-item .error {
       font-size: 11px;
@@ -179,8 +188,9 @@ body {
       margin-top: 4px;
       display: none; }
   .input-container.signup-page {
-    max-height: 610px;
-    min-height: 610px; }
+    max-height: 31.250vw;
+    min-height: 31.250vw;
+    overflow-y: auto; }
 
 .auth-header {
   width: 100%;
@@ -192,43 +202,93 @@ body {
     color: var(--primary-grey-14);
     font-weight: 500; }
   .auth-header .left-item {
-    height: 32px;
-    width: 32px; }
+    height: 1.667vw;
+    width: 1.667vw;
+    display: flex; }
     .auth-header .left-item img {
+      height: 100%;
+      width: 100%;
       cursor: pointer; }
 
-@media (max-width: 600px) {
-  .auth .auth-container .sign-in {
-    flex-direction: column; }
-    .auth .auth-container .sign-in .left-section {
-      width: 100%;
-      border-radius: 5px 5px 0 0;
-      padding: 20px;
-      order: 2; }
-    .auth .auth-container .sign-in .right-section {
-      padding: 40px 30px 40px 30px; }
+@media (max-width: 700px) {
+  .auth .auth-container {
+    width: 100%;
+    max-width: 100%; }
+    .auth .auth-container .sign-in {
+      flex-direction: column; }
+      .auth .auth-container .sign-in .left-section {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        padding: 1.042vw;
+        order: 2; }
+      .auth .auth-container .sign-in .right-section {
+        padding: 20px; }
+      .auth .auth-container .sign-in .sign-in-body .sign-in-button button {
+        border-radius: 4px !important;
+        min-height: 22px !important;
+        font-size: 11px !important;
+        margin-top: 16px !important; }
+      .auth .auth-container .sign-in .sign-in-body .input-helper {
+        font-size: 11px !important;
+        margin-top: 16px !important; }
+        .auth .auth-container .sign-in .sign-in-body .input-helper .input-checkbox label {
+          font-size: 11px !important; }
+        .auth .auth-container .sign-in .sign-in-body .input-helper .input-checkbox input {
+          width: 13px !important;
+          height: 13px !important; }
+      .auth .auth-container .sign-in .sign-in-footer {
+        font-size: 11px !important; }
+  .input-container.signup-page {
+    max-height: 342px !important;
+    min-height: 342px !important; }
+  .input-container .input-item input {
+    padding: 0 16px; }
+  .input-container .input-item label {
+    font-size: 11px !important; }
   .auth-header .right-item {
-    font-size: 16px; } }
+    font-size: 13px !important; }
+  .auth-header .left-item {
+    height: 24px;
+    width: 24px; }
+  .left-section {
+    padding: 16px !important; }
+    .left-section .left-section-container .logo {
+      display: flex;
+      height: 24px !important;
+      width: 24px !important; }
+    .left-section .left-section-container .description {
+      font-size: 8px !important;
+      margin-top: 16px !important; } }
 
 @media (max-width: 1100px) {
-  .sign-in .left-section {
-    flex-shrink: unset !important; }
   .sign-in .right-section .sign-in-body .sign-in-hint {
-    font-size: 13px; }
+    font-size: 11px !important; }
   .sign-in .right-section .sign-in-body .input-helper {
-    font-size: 13px; }
+    font-size: 11px !important; }
     .sign-in .right-section .sign-in-body .input-helper .input-checkbox label {
-      font-size: 13px !important; }
+      font-size: 11px !important; }
   .sign-in .right-section .sign-in-footer {
     font-size: 13px; }
   .auth-header .right-item {
-    font-size: 14px; } }
+    font-size: 13px; }
+  .input-container .label {
+    font-size: 11px !important; }
+  .input-container .input-item {
+    margin-top: 8px; }
+    .input-container .input-item input {
+      min-height: 30px;
+      font-size: 11px !important; }
+      .input-container .input-item input::placeholder {
+        font-size: 11px !important; }
+  .input-container.signup-page {
+    max-height: 370px;
+    min-height: 370px; } }
 
 .sign-up {
   display: flex; }
   .sign-up .left-section {
-    width: 300px;
-    padding: 40px 30px;
+    width: 15.625vw;
+    padding: 2.083vw 1.563vw;
     box-shadow: 10px 0px 15px #0000000d;
     flex-shrink: 0; }
     .sign-up .left-section .stepper {
@@ -241,13 +301,16 @@ body {
         align-items: center;
         justify-content: center;
         color: var(--primary-grey-11);
-        font-weight: 500; }
+        font-weight: 500;
+        font-size: 0.833vw; }
         .sign-up .left-section .stepper .stepper-item.active {
           background-color: var(--primary-blue-1);
           width: 36px;
           height: 36px;
           border-radius: 50%;
-          color: var(--primary-white-1); }
+          color: var(--primary-white-1);
+          width: 1.875vw;
+          height: 1.875vw; }
     .sign-up .left-section .separator {
       width: 26px;
       height: 4px;
@@ -262,38 +325,39 @@ body {
         width: 3.125vw;
         height: 3.125vw; }
     .sign-up .left-section .text {
-      margin-top: 20px;
+      margin-top: 1.042vw;
       text-align: center; }
       .sign-up .left-section .text .title {
         color: var(--primary-blue-1);
         text-decoration: none; }
       .sign-up .left-section .text .desc {
         margin-top: 12px;
-        color: var(--primary-grey-11); }
+        color: var(--primary-grey-11);
+        font-size: 0.833vw; }
     .sign-up .left-section .hint {
       display: flex;
       flex-direction: column;
       text-align: center;
       margin-top: 4.167vw;
-      font-size: 18px;
+      font-size: 0.833vw;
       text-decoration: none;
       color: var(--primary-grey-11); }
       .sign-up .left-section .hint .link {
         margin-top: 20px;
         color: var(--primary-blue-1);
         font-weight: 600;
-        font-size: 16px;
+        font-size: 0.833vw;
         cursor: pointer; }
   .sign-up .right-section {
     width: 100%;
-    padding: 40px 60px; }
+    padding: 1.5vw 2vw; }
     .sign-up .right-section .sign-up-body {
       margin-top: 2.188vw; }
     .sign-up .right-section .sign-up-hint {
       font-size: 14px;
       color: var(--primary-grey-12); }
   .sign-up .sign-up-button {
-    margin-top: 3.208vw;
+    margin-top: 15px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -301,8 +365,8 @@ body {
     .sign-up .sign-up-button.end {
       justify-content: flex-end; }
     .sign-up .sign-up-button button {
-      min-height: 60px;
-      min-width: 180px;
+      min-height: 30px;
+      min-width: 110px;
       border: 0;
       border-radius: 36px;
       color: var(--primary-white-1);
@@ -310,7 +374,8 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 0 24px;
+      padding: 0 1.25vw;
+      font-size: 0.833vw;
       cursor: pointer; }
       .sign-up .sign-up-button button.prev {
         background: var(--primary-grey-13);
@@ -321,13 +386,11 @@ body {
           order: 1; }
       .sign-up .sign-up-button button:disabled {
         opacity: 0.5; }
-  .sign-up #tab-two, .sign-up #tab-three {
+  .sign-up #tab-two,
+  .sign-up #tab-three {
     display: none; }
 
-::-webkit-scrollbar {
-  display: none; }
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .sign-up {
     flex-direction: column; }
     .sign-up .left-section {
@@ -342,12 +405,33 @@ body {
         display: none; }
       .sign-up .left-section .hint {
         margin: 0; }
+      .sign-up .left-section .stepper .stepper-item {
+        font-size: 11px; }
+        .sign-up .left-section .stepper .stepper-item.active {
+          width: 24px;
+          height: 24px; }
     .sign-up .right-section {
-      padding: 40px 30px; } }
+      padding: 20px; } }
 
 @media (max-width: 1100px) {
   .sign-up .left-section {
-    flex-shrink: unset !important; } }
+    flex-shrink: unset !important; }
+    .sign-up .left-section .hint {
+      font-size: 11px; }
+      .sign-up .left-section .hint .link {
+        font-size: 11px; }
+    .sign-up .left-section .separator {
+      margin-top: 16px; }
+    .sign-up .left-section .title {
+      font-size: 13px; }
+    .sign-up .left-section .desc {
+      font-size: 13px; }
+  .sign-up .sign-up-button button {
+    font-size: 12px !important;
+    min-width: 100px;
+    height: 30px; }
+  .input-container .input-item .error {
+    font-size: 9px !important; } }
 
 .section-one .image-holder {
   width: 100%;
@@ -422,8 +506,7 @@ body {
         font-size: 0.95vw;
         color: var(--primary-white-1);
         max-height: 10vw;
-        overflow-y: scroll;
-        height: 10vw; }
+        min-height: 10vw; }
       .section-one .image-holder .image-holder-container .details .button {
         margin: 3.35vw 0%;
         width: fit-content;
